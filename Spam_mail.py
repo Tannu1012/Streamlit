@@ -83,3 +83,11 @@ with st.expander("⚙️ Model Information"):
     - **Features**: TF-IDF Vectorization  
     - **Preprocessing**: Lowercasing, Stopword Removal  
     """)
+
+with st.expander("📝 How to Use"):
+    st.markdown("""
+    1. Enter or paste your email/message in the text box.  
+    2. Click **Predict** to check if it's spam or not.  
+    3. View dataset & model details in the expanders.  
+    4. Accuracy metrics are shown above.  
+    """)
