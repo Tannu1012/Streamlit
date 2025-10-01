@@ -72,3 +72,14 @@ st.sidebar.subheader("📊 Quick Stats")
 st.sidebar.write(f"Total Messages: **{len(mail_data)}**")
 st.sidebar.write(f"Spam Messages: **{(Y == 0).sum()}**")
 st.sidebar.write(f"Ham Messages: **{(Y == 1).sum()}**")
+
+
+with st.expander("📂 Dataset Preview"):
+    st.write(mail_data.head(10))
+
+with st.expander("⚙️ Model Information"):
+    st.write("""
+    - **Algorithm**: Logistic Regression  
+    - **Features**: TF-IDF Vectorization  
+    - **Preprocessing**: Lowercasing, Stopword Removal  
+    """)
