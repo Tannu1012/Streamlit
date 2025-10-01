@@ -53,3 +53,17 @@ if st.button("Predict"):
             st.success("This message is **HAM (Not Spam)**.")
     else:
         st.warning("Please enter a message to classify.")
+
+st.sidebar.title("ℹ️ About This App")
+st.sidebar.write("""
+This is a **Spam Mail Prediction App** built with Streamlit.  
+It uses **TF-IDF vectorization** and **Logistic Regression** to classify emails/messages as:
+- **SPAM** 🚨  
+- **HAM (Not Spam)** ✅  
+
+**How to use:**  
+1. Enter your message in the text box.  
+2. Click **Predict** to see the result.  
+
+**Dataset:** SMS Spam Collection dataset (spam vs ham messages).
+""")
