@@ -37,7 +37,7 @@ test_acc = accuracy_score(Y_test, model.predict(X_test_features))
 
 # ---------------- Streamlit App ----------------
 st.title("📧 Spam Mail Prediction App")
-# st.tiitle("")
+st.tiitle("Prediction system")
 
 st.write(f"Model trained with **{train_acc:.2f}** accuracy on training data and **{test_acc:.2f}** on test data.")
 # User input
