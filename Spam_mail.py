@@ -67,3 +67,8 @@ It uses **TF-IDF vectorization** and **Logistic Regression** to classify emails/
 
 **Dataset:** SMS Spam Collection dataset (spam vs ham messages).
 """)
+
+st.sidebar.subheader("📊 Quick Stats")
+st.sidebar.write(f"Total Messages: **{len(mail_data)}**")
+st.sidebar.write(f"Spam Messages: **{(Y == 0).sum()}**")
+st.sidebar.write(f"Ham Messages: **{(Y == 1).sum()}**")
